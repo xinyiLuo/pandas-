@@ -58,4 +58,27 @@ Csv读取和存入
 ### Numpy
 * Numpy是一个广泛应用于数据科学界的软件套件，它使我们能够高效地工作在python中的数组（arrays）和矩阵（matrices）。
 
+# Week02
+## Pandas能处理什么样的数据？
+* 要将数据手动存储在表中，请创建一个DataFrame。使用Python的列表字典时，字典键将用作列标题，而每个列表中的值将用作的行DataFrame。
+* 探索，清理和处理数据在Pandas中，数据表称为DataFrame
+* 竖着的列column通常放变数variables
+* 横着的行row通常放观察observations
+* 表格数据（例如存储在电子表格或数据库中的数据）是很常见的，最主流的数据结构和查询语言是SQL
+* 树状文本数据（例如HTML, XML, JSON数据）是很常见的，HTML/XML最主流的查询语言是xpath
+## 如何读写表格数据？
+* pandas提供了read_csv()将存储为csv文件的数据读入pandas的功能DataFrame。pandas开箱即用地支持许多不同的文件格式或数据源（csv，excel，sql，json，parquet等），每种格式都有前缀read_*。
+## 如何选择的子集DataFrame？
+![Image text](https://github.com/xinyiLuo/pandas-/blob/master/photo/1.png)
+## 如何从中选择特定的行和列DataFrame？
+![Image text](https://github.com/xinyiLuo/pandas-/blob/master/photo/2.png)
+### Tips：
+* 选择数据子集时，使用方括号[]。
+* 在这些括号内，您可以使用单个列/行标签，列/行标签列表，标签切片，条件表达式或冒号。
+* loc使用行和列名称时选择特定的行和/或列
+* iloc使用表格中的位置时选择特定的行和/或列
+* 您可以基于loc/ 为选择分配新值iloc。
+
+
+
 
